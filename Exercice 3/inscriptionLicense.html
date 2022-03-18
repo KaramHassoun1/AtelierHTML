@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohamed Karam Hassoun">
+    <title>Inscription en ligne</title>
+</head>
+<body>
+    <form>
+    <h2 align="center" >Inscription en licence </h2>
+    <div style="border : solid 5px black ; text-align:center">
+        <h4>Inscription personnelles</h4>
+    
+            <label for= "Nom">Votre nom </label>
+            <input type ="text" name="Nom" placeholder="Votre Nom"><br><br>
+            <label for="Prenom" >Votre prénom</label>
+            <input type="text"name="Prenom" placeholder="Votre Prenom" ><br><br>
+            <label for ="Age"> Votre age </label>
+            <input type ="number" name="Age"placeholder ="Votre age"  ><br><br>
+            <label for ="Adresse"> Votre adresse </label>
+            <textarea name="Adresse" cols ="50" rows="5" placeholder="votre adresse"></textarea><br><br>
+            <label for="Mot De Passe" > Mot de passe </label>
+            <input required type="Password" name="Mot De Passe" placeholder="votre mot de passe"><br><br>
+            <label for="Mot De Passe" > Répetez votre mot de passe </label>
+            <input required type="Password" name="Mot De Passe " placeholder="répetez votre mot de passe"><br><br>
+    </div>
+    <br>
+    <div style="border : solid 5px black ; text-align:center">
+     <h4> Gestion des groupes et des options</h4>
+     <label for="Groupe">Votre groupe: </label>
+     <input type="radio" name="Groupe">Groupe1
+     <input type="radio" name="Groupe">Groupe2
+     <input type="radio" name="Groupe">Groupe3<br><br>
+     <label for="ce"> Numéro Carte Etudiant </label>
+     <input type="number" name="ce" value =" Numéro Carte Etudiant" placeholder="Num carte d'étudiant"><br><br>
+     <label for="option" >Choisissez les options que vous désirez</label>
+     <select>
+         <option value ="J2eee">J2EEE
+         <option value="Android">Android
+         <option value=".Net">.Net
+         <option value ="HTML5">HTML5
+        <Option value="Flex">Flex
+        </select>
+        <br><br>
+        <input required type="text" pattern ="[I][N][S][A][T][0-9]{4}" placeholder="Ecrire INSAT + chiffre"><br><br>
+
+    </div>
+    <br>
+   <div align="center">
+    <input type="submit" value="valider">
+    <input type="reset"value ="réinitialiser">
+   </div>
+   <br>
+    </form>
+    </body>
+</html>
